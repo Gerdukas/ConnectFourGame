@@ -47,7 +47,7 @@ public class computerPlayerTest {
 	}
 	
 	@Test
-	public void testComputerPlayer() {
+	public void testComputerPlayerNegativeDepth() {
 	    ComputerPlayer player1 = new ComputerPlayer(-6);
 	    RandomPlayer player2 = new RandomPlayer();
 	    Board board1 = new Board(6,6);
@@ -56,6 +56,7 @@ public class computerPlayerTest {
 	    player2.performPlay(board1);
 	    
 	    player1.performPlay(board1);
+	    assertTrue(true);
 	}
 	
 }

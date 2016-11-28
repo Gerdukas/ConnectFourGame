@@ -57,7 +57,7 @@ public class ComputerPlayer implements Player {
         long score = 0;
         if (Game.detectWinner(myMove, 4) == this) {
             score += Math.pow(l, depth);
-        } else if (depth != 0) {
+        } else if (depth >= 0) { //bug1
             for (int i = 0; i != l; ++i) {
                 if (myMove.whoPlayed(i, m-1) != null) continue;
                 Board nextMove = new Board(myMove);
