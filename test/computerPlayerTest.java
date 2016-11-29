@@ -59,4 +59,15 @@ public class computerPlayerTest {
 	    assertTrue(true);
 	}
 	
+	
+	@Test
+	public void testComputerPlayerNegativeBoardSize() {
+	    ComputerPlayer player1 = new ComputerPlayer();
+	    RandomPlayer player2 = new RandomPlayer();
+	    Board board1 = new Board(6,6);
+	    
+	    player1.performPlay(board1);
+	    player2.performPlay(board1);
+	}
+	
 }
