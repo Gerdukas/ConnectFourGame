@@ -5,8 +5,6 @@
  */
 
 import connect.four.board.Board;
-import connect.four.board.ReadWritableBoard;
-import connect.four.player.ComputerPlayer;
 import connect.four.player.RandomPlayer;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -19,9 +17,9 @@ import org.testng.annotations.Test;
  *
  * @author Gerdinha
  */
-public class computerPlayerTest {
+public class RandomPlayerTest {
 	
-	public computerPlayerTest() {
+	public RandomPlayerTest() {
 	}
 
 	// TODO add test methods here.
@@ -47,22 +45,27 @@ public class computerPlayerTest {
 	}
 	
 	@Test
-	public void testComputerPlayerNegativeDepth() {
-	    ComputerPlayer player1 = new ComputerPlayer(-6);
-	    RandomPlayer player2 = new RandomPlayer();
-	    Board board1 = new Board(6,6);
-	    
-	    player1.performPlay(board1);
-	    player2.performPlay(board1);
-	    
-	    player1.performPlay(board1);
-	    assertTrue(true);
-	}	
-	
-	@Test
-	public void testComputerPlayerName() {
-	    ComputerPlayer player1 = new ComputerPlayer();
-	    assertEquals(player1.getName(), "Computer");
+	public void testRandomPlayerName() {
+	    Board board1 = new Board(7,6);
+	    RandomPlayer randomPlayer1 = new RandomPlayer ();
+	    assertEquals(randomPlayer1.getName(), "Computer");
 	}
 	
+		@Test
+	public void testRandomPlayerMove() {
+	    int height = 5;
+	    int width = 5;
+	    
+	    Board board1 = new Board(width,height);
+	    RandomPlayer randomPlayer2 = new RandomPlayer();
+	    randomPlayer2.performPlay(board1);
+	    assertEquals(board1.getMoveCount(), 1);
+	    
+	    board1.clear();
+	    for (int i =0; i < height * width; i++)
+	    {
+		    randomPlayer2.performPlay(board1);
+		    assertEquals(board1.getMoveCount(), i+1);
+	    }
+	}
 }

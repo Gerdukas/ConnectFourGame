@@ -19,7 +19,7 @@ public class RandomPlayer implements Player {
         if (board.whoPlayed(x, height-1) != null) {
 	    int chosenX = (x + 1) % width;
 	    while (board.whoPlayed(chosenX, height-1) != null && chosenX != x) {
-		chosenX = (x + 1) % width;
+		chosenX = (chosenX + 1) % width; //bug2
 	    }
 	    x = chosenX;
 	}
