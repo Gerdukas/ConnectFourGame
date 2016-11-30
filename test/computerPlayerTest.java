@@ -65,4 +65,24 @@ public class computerPlayerTest {
 	    assertEquals(player1.getName(), "Computer");
 	}
 	
+	@Test
+	public void testComputerPlayerPerformPlay() {
+		
+	    int width = 7;
+	    int height = 6;
+	    int maxMove = width * height;
+	    Board board2 = new Board (width, height);
+	    ComputerPlayer player1 = new ComputerPlayer();
+	    ComputerPlayer player2 = new ComputerPlayer();
+	    
+	    player1.performPlay(board2);
+	    assertEquals(board2.getMoveCount(),1);
+	
+	    board2.clear();
+	    for (int i = 0; i < maxMove; i++){
+		    
+	    }
+	   
+	}
+	
 }

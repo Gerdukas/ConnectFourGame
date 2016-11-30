@@ -51,7 +51,7 @@ public class RandomPlayerTest {
 	    assertEquals(randomPlayer1.getName(), "Computer");
 	}
 	
-		@Test
+	@Test
 	public void testRandomPlayerMove() {
 	    int height = 5;
 	    int width = 5;
@@ -64,8 +64,8 @@ public class RandomPlayerTest {
 	    board1.clear();
 	    for (int i =0; i < height * width; i++)
 	    {
-		    randomPlayer2.performPlay(board1);
-		    assertEquals(board1.getMoveCount(), i+1);
+		randomPlayer2.performPlay(board1);
+		assertEquals(board1.getMoveCount(), i+1);
 	    }
 	}
 }
