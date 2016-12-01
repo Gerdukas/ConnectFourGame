@@ -14,17 +14,24 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Gerdinha
+ * @author Gerda Fraimanaite
  */
 public class ConsolePlayerTest {
 	
-	public ConsolePlayerTest() {
-	}
-
+	/**
+	 * Called before the tests start. Run once.
+	 * 
+	 * @throws Exception java.lang.Exception
+	 */
 	@BeforeClass
 	public static void setUpClass() throws Exception {
 	}
 
+	/**
+	 * Called after the class has been initialized. Run once.
+	 * 
+	 * @throws Exception java.lang.Exception
+	 */
 	@AfterClass
 	public static void tearDownClass() throws Exception {
 	}
@@ -37,6 +44,10 @@ public class ConsolePlayerTest {
 	public void tearDownMethod() throws Exception {
 	}
 	
+	/**
+	 * Test if Console player constructor return the right value
+	 */
+	
 	@Test
 	public void testConsolePlayerConstructor() {
 	    ConsolePlayer p1 = new ConsolePlayer("Gerda");
@@ -45,10 +56,5 @@ public class ConsolePlayerTest {
 	    String name2 = p2.getName();
 	    assertEquals(name, "Gerda");
 	    assertNotEquals(name2, "Gerda");
-	}
-	
-	@Test
-	public void testSetName(){
-	
 	}
 }

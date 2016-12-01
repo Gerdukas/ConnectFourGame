@@ -15,23 +15,23 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author Gerdinha
+ * @author Gerda Fraimanaite
  */
 public class RandomPlayerTest {
 	
-	public RandomPlayerTest() {
-	}
-
-	// TODO add test methods here.
-	// The methods must be annotated with annotation @Test. For example:
-	//
-	// @Test
-	// public void hello() {}
-
+	/**
+	 * Called before the tests start. Run once.
+	 * 
+	 * @throws Exception java.lang.Exception
+	 */
 	@BeforeClass
 	public static void setUpClass() throws Exception {
 	}
-
+	/**
+	 * Called after the class has been initialized. Run once.
+	 * 
+	 * @throws Exception java.lang.Exception
+	 */
 	@AfterClass
 	public static void tearDownClass() throws Exception {
 	}
@@ -44,6 +44,9 @@ public class RandomPlayerTest {
 	public void tearDownMethod() throws Exception {
 	}
 	
+	/**
+	 * Test if getName method returns the right value
+	 */
 	@Test
 	public void testRandomPlayerName() {
 	    Board board1 = new Board(7,6);
@@ -51,6 +54,9 @@ public class RandomPlayerTest {
 	    assertEquals(randomPlayer1.getName(), "Computer");
 	}
 	
+	/**
+	 * Test if perform play method moves once at the time
+	 */
 	@Test
 	public void testRandomPlayerMove() {
 	    int height = 5;

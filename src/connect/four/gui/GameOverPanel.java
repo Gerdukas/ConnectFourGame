@@ -35,15 +35,15 @@ public class GameOverPanel extends javax.swing.JPanel {
                 winnerDisplay.setForeground(new java.awt.Color(255, 255, 255));
                 winnerDisplay.setText("Winner");
 
-                winner.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+                winner.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
                 winner.setForeground(new java.awt.Color(255, 255, 255));
                 winner.setText("Winner:");
 
-                labelGameOVer.setFont(new java.awt.Font("Lucida Grande", 0, 48)); // NOI18N
+                labelGameOVer.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
                 labelGameOVer.setForeground(new java.awt.Color(255, 255, 255));
                 labelGameOVer.setText("GAME OVER");
 
-                butPlayAgain.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+                butPlayAgain.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
                 butPlayAgain.setText("Play Again");
                 butPlayAgain.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,7 +51,7 @@ public class GameOverPanel extends javax.swing.JPanel {
                         }
                 });
 
-                butMainMenu.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+                butMainMenu.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
                 butMainMenu.setText("Main Menu");
                 butMainMenu.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +78,7 @@ public class GameOverPanel extends javax.swing.JPanel {
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(551, 551, 551)
                                                 .addComponent(butMainMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(429, Short.MAX_VALUE))
+                                .addContainerGap(425, Short.MAX_VALUE))
                 );
                 layout.setVerticalGroup(
                         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

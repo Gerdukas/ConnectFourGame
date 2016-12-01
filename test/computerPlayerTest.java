@@ -56,6 +56,11 @@ public class ComputerPlayerTest {
 	public void tearDownMethod() throws Exception {
 	}
 	
+	
+	/**
+	 * Test if negative depth has impact on player perform play method
+	 */
+	
 	@Test
 	public void testComputerPlayerNegativeDepth() {
 	    ComputerPlayer player1 = new ComputerPlayer(-6);
@@ -69,12 +74,18 @@ public class ComputerPlayerTest {
 	    assertTrue(true);
 	}	
 	
+	/**
+	 * Test if getName method returns the right value
+	 */
 	@Test
 	public void testComputerPlayerName() {
 	    ComputerPlayer player1 = new ComputerPlayer();
 	    assertEquals(player1.getName(), "Computer");
 	}
 	
+	/**
+	 * Test if perform play method moves once at the time
+	 */
 	@Test
 	public void testComputerPlayerPerformPlay() {
 		

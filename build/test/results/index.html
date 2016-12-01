@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-connect-four">
-              <span class="suite-name border-failed">connect-four</span>
+              <span class="suite-name border-passed">connect-four</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-connect-four" class="hide-methods failed suite-connect-four"> (hide)</a> <!-- hide-methods failed suite-connect-four -->
-                      <a href="#" panel-name="suite-connect-four" class="show-methods failed suite-connect-four"> (show)</a> <!-- show-methods failed suite-connect-four -->
-                    </span>
-                    <div class="method-list-content failed suite-connect-four">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-connect-four" title="ComputerPlayerTest" hash-for-method="testComputerPlayerPerformPlay">testComputerPlayerPerformPlay</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-connect-four -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,12 +101,12 @@
                     <div class="method-list-content passed suite-connect-four">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-connect-four" title="ComputerPlayerTest" hash-for-method="testComputerPlayerName">testComputerPlayerName</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-connect-four" title="TestGame" hash-for-method="testGetScore">testGetScore</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-connect-four" title="ComputerPlayerTest" hash-for-method="testComputerPlayerNegativeDepth">testComputerPlayerNegativeDepth</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-connect-four" title="TestGame" hash-for-method="testPlayerNumber">testPlayerNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-connect-four -->
@@ -135,45 +121,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-connect-four" class="panel connect-four">
-          <div class="suite-connect-four-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">ComputerPlayerTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testComputerPlayerPerformPlay">
-                  </a> <!-- testComputerPlayerPerformPlay -->
-                  <span class="method-name">testComputerPlayerPerformPlay</span>
-                  <div class="stack-trace">java.lang.Error: Can&apos;t call getOpponent on first turn.
-	at connect.four.player.ComputerPlayer.getOpponent(ComputerPlayer.java:88)
-	at connect.four.player.ComputerPlayer.performPlay(ComputerPlayer.java:30)
-	at ComputerPlayerTest.testComputerPlayerPerformPlay(ComputerPlayerTest.java:95)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-connect-four-class-failed -->
           <div class="suite-connect-four-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ComputerPlayerTest</span>
+              <span class="class-name">TestGame</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testComputerPlayerName">
-                  </a> <!-- testComputerPlayerName -->
-                  <span class="method-name">testComputerPlayerName</span>
+                  <a name="testGetScore">
+                  </a> <!-- testGetScore -->
+                  <span class="method-name">testGetScore</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testComputerPlayerNegativeDepth">
-                  </a> <!-- testComputerPlayerNegativeDepth -->
-                  <span class="method-name">testComputerPlayerNegativeDepth</span>
+                  <a name="testPlayerNumber">
+                  </a> <!-- testPlayerNumber -->
+                  <span class="method-name">testPlayerNumber</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,11 +152,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;connect-four&quot;&gt;
-  &lt;test name=&quot;ComputerPlayerTest&quot; preserve-order=&quot;false&quot;&gt;
+  &lt;test name=&quot;TestGame&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ComputerPlayerTest&quot;/&gt;
+      &lt;class name=&quot;TestGame&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ComputerPlayerTest --&gt;
+  &lt;/test&gt; &lt;!-- TestGame --&gt;
 &lt;/suite&gt; &lt;!-- connect-four --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,7 +168,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ComputerPlayerTest (1 class)</span>
+                <span class="test-name">TestGame (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,24 +194,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testComputerPlayerPerformPlay')
-data.setCell(0, 2, 'ComputerPlayerTest')
-data.setCell(0, 3, 10255);
+data.setCell(0, 1, 'testGetScore')
+data.setCell(0, 2, 'TestGame')
+data.setCell(0, 3, 8);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testComputerPlayerNegativeDepth')
-data.setCell(1, 2, 'ComputerPlayerTest')
-data.setCell(1, 3, 27);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testComputerPlayerName')
-data.setCell(2, 2, 'ComputerPlayerTest')
-data.setCell(2, 3, 9);
+data.setCell(1, 1, 'testPlayerNumber')
+data.setCell(1, 2, 'TestGame')
+data.setCell(1, 3, 7);
 window.suiteTableData['connect-four']= { tableData: data, tableDiv: 'times-div-connect-four'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 15 ms</span>
               <div id="times-div-connect-four">
               </div> <!-- times-div-connect-four -->
             </div> <!-- times-div -->
@@ -272,52 +233,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ComputerPlayerTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestGame</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">60 ms</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testComputerPlayerName</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-name">testGetScore</span>
+                <span class="method-start">61 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod</span>
-                <span class="method-start">72 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">74 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testComputerPlayerNegativeDepth</span>
                 <span class="method-start">76 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">109 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">128 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testComputerPlayerPerformPlay</span>
-                <span class="method-start">134 ms</span>
+                <span class="method-name">testPlayerNumber</span>
+                <span class="method-start">95 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod</span>
-                <span class="method-start">10398 ms</span>
+                <span class="method-start">105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">10404 ms</span>
+                <span class="method-start">113 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
