@@ -5,7 +5,6 @@
  */
 
 import connect.four.board.Board;
-import connect.four.board.ReadWritableBoard;
 import connect.four.player.ComputerPlayer;
 import connect.four.player.RandomPlayer;
 import static org.testng.Assert.*;
@@ -16,30 +15,41 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /**
- *
- * @author Gerdinha
+ * Test all the methods of Computer player class.
+ * @author Gerda Fraimanaite 
  */
-public class computerPlayerTest {
+public class ComputerPlayerTest {
 	
-	public computerPlayerTest() {
-	}
+	private ComputerPlayer player1;
 
-	// TODO add test methods here.
-	// The methods must be annotated with annotation @Test. For example:
-	//
-	// @Test
-	// public void hello() {}
-
+	/**
+	 * Called before the tests start. Run once.
+	 * 
+	 * @throws Exception java.lang.Exception
+	 */
 	@BeforeClass
 	public static void setUpClass() throws Exception {
 	}
 
+	/**
+	 * Called after the class has been initialized. Run once.
+	 * 
+	 * @throws Exception java.lang.Exception
+	 */
+	
 	@AfterClass
 	public static void tearDownClass() throws Exception {
 	}
 
+	/**
+	 * Sets up the test fixture (Called before every test case method.)
+	 * 
+	 * @throws Exception java.lang.Exception
+	 */
+	
 	@BeforeMethod
 	public void setUpMethod() throws Exception {
+		
 	}
 
 	@AfterMethod
@@ -71,6 +81,7 @@ public class computerPlayerTest {
 	    int width = 7;
 	    int height = 6;
 	    int maxMove = width * height;
+	    
 	    Board board2 = new Board (width, height);
 	    ComputerPlayer player1 = new ComputerPlayer();
 	    ComputerPlayer player2 = new ComputerPlayer();
@@ -79,10 +90,6 @@ public class computerPlayerTest {
 	    assertEquals(board2.getMoveCount(),1);
 	
 	    board2.clear();
-	    for (int i = 0; i < maxMove; i++){
-		    
-	    }
 	   
 	}
-	
 }

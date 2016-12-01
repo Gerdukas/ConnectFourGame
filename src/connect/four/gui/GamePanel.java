@@ -556,11 +556,7 @@ public class GamePanel extends javax.swing.JPanel implements ScoreChart.Listener
 				}
 
 				//Turn goes up, unless there is a tie
-				if(turnNum == 42){ // bug3
-//					for (GUIPiece piece : pieces) {
-//						piece.setIcon(null);
-//						topGlass.remove(piece);
-//					}
+				if(turnNum == 42){ //bug3
 					gui.setWinner("It's a tie!");
 					board.clear();
 					initNewGame();
