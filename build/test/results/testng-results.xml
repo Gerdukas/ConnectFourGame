@@ -1,45 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="connect-four" duration-ms="160" started-at="2016-12-01T02:12:59Z" finished-at="2016-12-01T02:12:59Z">
+  <suite name="connect-four" duration-ms="2742" started-at="2016-12-02T01:31:15Z" finished-at="2016-12-02T01:31:17Z">
     <groups>
     </groups>
-    <test name="TestGame" duration-ms="160" started-at="2016-12-01T02:12:59Z" finished-at="2016-12-01T02:12:59Z">
-      <class name="TestGame">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestGame@394e1a0f]" name="setUpClass" is-config="true" duration-ms="34" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+    <test name="ComputerPlayerTest" duration-ms="2742" started-at="2016-12-02T01:31:15Z" finished-at="2016-12-02T01:31:17Z">
+      <class name="ComputerPlayerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="setUpClass" is-config="true" duration-ms="54" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:TestGame@394e1a0f]" name="setUpMethod" is-config="true" duration-ms="14" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="setUpMethod" is-config="true" duration-ms="4" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="testGetScore()[pri:0, instance:TestGame@394e1a0f]" name="testGetScore" duration-ms="8" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+        <test-method status="PASS" signature="testComputerPlayerName()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="testComputerPlayerName" duration-ms="8" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetScore -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:TestGame@394e1a0f]" name="tearDownMethod" is-config="true" duration-ms="5" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+        </test-method> <!-- testComputerPlayerName -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:TestGame@394e1a0f]" name="setUpMethod" is-config="true" duration-ms="4" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="setUpMethod" is-config="true" duration-ms="1" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="testPlayerNumber()[pri:0, instance:TestGame@394e1a0f]" name="testPlayerNumber" duration-ms="7" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+        <test-method status="PASS" signature="testComputerPlayerNegativeDepth()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="testComputerPlayerNegativeDepth" duration-ms="20" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPlayerNumber -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:TestGame@394e1a0f]" name="tearDownMethod" is-config="true" duration-ms="4" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+        </test-method> <!-- testComputerPlayerNegativeDepth -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="tearDownMethod" is-config="true" duration-ms="4" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestGame@394e1a0f]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2016-11-30T21:12:59Z" finished-at="2016-11-30T21:12:59Z">
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="setUpMethod" is-config="true" duration-ms="3" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="testComputerPlayerPerformPlay()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="testComputerPlayerPerformPlay" duration-ms="4" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testComputerPlayerPerformPlay -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="tearDownMethod" is-config="true" duration-ms="5" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="setUpMethod" is-config="true" duration-ms="2" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="testComputerPlayerPositiveDepth()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="testComputerPlayerPositiveDepth" duration-ms="2534" started-at="2016-12-01T20:31:15Z" finished-at="2016-12-01T20:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testComputerPlayerPositiveDepth -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="tearDownMethod" is-config="true" duration-ms="3" started-at="2016-12-01T20:31:17Z" finished-at="2016-12-01T20:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="setUpMethod" is-config="true" duration-ms="2" started-at="2016-12-01T20:31:17Z" finished-at="2016-12-01T20:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="testComputerPlayerZeroDepth()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="testComputerPlayerZeroDepth" duration-ms="5" started-at="2016-12-01T20:31:17Z" finished-at="2016-12-01T20:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testComputerPlayerZeroDepth -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="tearDownMethod" is-config="true" duration-ms="3" started-at="2016-12-01T20:31:17Z" finished-at="2016-12-01T20:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ComputerPlayerTest@5a1c0542]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2016-12-01T20:31:17Z" finished-at="2016-12-01T20:31:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- TestGame -->
-    </test> <!-- TestGame -->
+      </class> <!-- ComputerPlayerTest -->
+    </test> <!-- ComputerPlayerTest -->
   </suite> <!-- connect-four -->
 </testng-results>

@@ -59,8 +59,8 @@ public class RandomPlayerTest {
 	 */
 	@Test
 	public void testRandomPlayerMove() {
-	    int height = 5;
-	    int width = 5;
+	    int height = 6;
+	    int width = 7;
 	    
 	    Board board1 = new Board(width,height);
 	    RandomPlayer randomPlayer2 = new RandomPlayer();

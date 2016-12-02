@@ -74,6 +74,31 @@ public class ComputerPlayerTest {
 	    assertTrue(true);
 	}	
 	
+	@Test
+	public void testComputerPlayerZeroDepth() {
+	    ComputerPlayer player1 = new ComputerPlayer(0);
+	    RandomPlayer player2 = new RandomPlayer();
+	    Board board1 = new Board(6,6);
+	    
+	    player1.performPlay(board1);
+	    player2.performPlay(board1);
+	    
+	    player1.performPlay(board1);
+	    assertTrue(true);
+	}
+	
+	@Test
+	public void testComputerPlayerPositiveDepth() {
+	    ComputerPlayer player1 = new ComputerPlayer(4);
+	    RandomPlayer player2 = new RandomPlayer();
+	    Board board1 = new Board(6,6);
+	    
+	    player1.performPlay(board1);
+	    player2.performPlay(board1);
+	    
+	    player1.performPlay(board1);
+	    assertTrue(true);
+	}
 	/**
 	 * Test if getName method returns the right value
 	 */
