@@ -8,6 +8,7 @@ public class GameOverPanel extends javax.swing.JPanel {
 	GUI gui;
 	
 	public GameOverPanel(GUI gui, String winner) {
+		gui.setTitle("ConnectFour - Game Over!");
 		initComponents();
 		this.gui = gui;
 		setSize(1280, 800);

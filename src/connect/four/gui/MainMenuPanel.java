@@ -7,6 +7,7 @@
 package connect.four.gui;
 
 import connect.four.Game;
+import javax.swing.ImageIcon;
 
 
 public class MainMenuPanel extends javax.swing.JPanel {
@@ -16,6 +17,9 @@ public class MainMenuPanel extends javax.swing.JPanel {
 	private boolean isEnabled;
 	
 	public MainMenuPanel(GUI gui) {
+		gui.setTitle("ConnectFour");
+		ImageIcon img= new ImageIcon(getClass().getResource("/red_glow/glow1.png"));
+		gui.setIconImage(img.getImage());
 		initComponents();
 		setSize(1280,800);
 		this.gui = gui;
@@ -143,8 +147,18 @@ public class MainMenuPanel extends javax.swing.JPanel {
         }//GEN-LAST:event_tfplayer1ActionPerformed
 
         private void butPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butPlayActionPerformed
-		gui.setPlayer1Name(tfplayer1.getText());
-		gui.setPlayer2Name(tfplayer2.getText());
+		if(tfplayer1.getText().equals("")||tfplayer1.getText().length()>12){
+			gui.setPlayer1Name("Player 1");
+		}
+		else{
+			gui.setPlayer1Name(tfplayer1.getText());
+		}
+		if(tfplayer2.getText().equals("")||tfplayer2.getText().length()>12){
+			gui.setPlayer2Name("Player 2");
+		}
+		else{
+			gui.setPlayer2Name(tfplayer2.getText());
+		}
 		//gui.game.start();
 		gui.remove(this);
 		gui.addGamePanel();

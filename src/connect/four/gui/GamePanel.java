@@ -34,6 +34,7 @@ public class GamePanel extends javax.swing.JPanel implements ScoreChart.Listener
 	boolean justWon;
 	
 	public GamePanel(GUI gui, boolean isComputerEnabled) {
+		gui.setTitle("ConnectFour - Game On!");
 		//whoPlayed = 1;
 		players = new Player[2];
 		players[0] = new GUIPlayer(gui.getPlayer1Name(), this);
@@ -552,7 +553,7 @@ public class GamePanel extends javax.swing.JPanel implements ScoreChart.Listener
 					pNameDisplay.setForeground(Color.red);
 				}
 				else{
-					pNameDisplay.setForeground(Color.blue);
+					pNameDisplay.setForeground(Color.CYAN);
 				}
 
 				//Turn goes up, unless there is a tie
