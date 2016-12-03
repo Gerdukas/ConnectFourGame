@@ -34,7 +34,7 @@ public class GamePanel extends javax.swing.JPanel implements ScoreChart.Listener
 	boolean justWon;
 	
 	public GamePanel(GUI gui, boolean isComputerEnabled) {
-		gui.setTitle("ConnectFour - Game On!");
+		gui.setTitle("Connect Four - Game On!");
 		//whoPlayed = 1;
 		players = new Player[2];
 		players[0] = new GUIPlayer(gui.getPlayer1Name(), this);

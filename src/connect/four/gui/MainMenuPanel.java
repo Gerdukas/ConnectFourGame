@@ -17,7 +17,7 @@ public class MainMenuPanel extends javax.swing.JPanel {
 	private boolean isEnabled;
 	
 	public MainMenuPanel(GUI gui) {
-		gui.setTitle("ConnectFour");
+		gui.setTitle("Connect Four");
 		ImageIcon img= new ImageIcon(getClass().getResource("/red_glow/glow1.png"));
 		gui.setIconImage(img.getImage());
 		initComponents();
